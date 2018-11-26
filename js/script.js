@@ -29,7 +29,8 @@ $().ready(function () {
         $(".typeahead").autocomplete({
             data: aut,
         });
-    })
+    });
+    $('.modal').modal();
 });
 enableLoc.change(function () {
     if ($(this).is(':checked')) {
@@ -72,11 +73,11 @@ let cities = [],
     today = new Date(),
     company = ["latam", "gol", "azul", "avianca"];
 
-function generateFlights(days, dest, departure) {
+function generateFlights(days, desti, departure) {
     console.log(days);
-    if (lastCity[0] !== dest || lastCity[1] !== departure || lastCity[2] !== days.ida || lastCity[3] !== days.volta) {
+    if (lastCity[0] !== desti || lastCity[1] !== departure || lastCity[2] !== days.ida || lastCity[3] !== days.volta) {
         drawArea.empty();
-        lastCity[0] = dest;
+        lastCity[0] = desti;
         lastCity[1] = departure;
         lastCity[3] = days.ida;
         lastCity[4] = days.volta;
@@ -93,7 +94,8 @@ function generateFlights(days, dest, departure) {
                 drawArea.append(generateFlightCard(
                     (from.val() !== "" ? {Nome: from.val()} :
                         cities[Math.round(Math.random() * cities.length)]),
-                    "",
+                    (dest.val() !== "" ? {Nome: dest.val()} :
+                        ""),
                     flightPrices[c],
                     {
                         "departure": generateFlightDate(tempIniDate, true),
@@ -107,9 +109,13 @@ function generateFlights(days, dest, departure) {
     } else {
         $(".progress").toggle('fast');
     }
+
 }
 
 function generateFlightCard(departure, destiny, price, dates, company) {
+    let data = {
+        comp : company
+    };
     if (typeof departure !== 'undefined' && departure.Nome !== dest.val()) {
         return '<div class="col-6 s12 m7">' +
             '       <div class="card horizontal">' +
@@ -121,7 +127,7 @@ function generateFlightCard(departure, destiny, price, dates, company) {
             '                   <div class="card-content">' +
             '                       <p>Partindo de ' + departure.Nome + "</p>" +
             '                       <p>Ida: ' + returnDateString(dates.departure) + '  Retorno: ' + returnDateString(dates.arrival) + '</p>' +
-            '                       <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="fa fa-shopping-cart fa-lg"></i></a>\n' +
+            '                       <button class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" onclick="buy(\''+company+','+departure.Nome+','+destiny.Nome+','+returnDateString(dates.departure) +','+returnDateString(dates.arrival)   +'\')" data-target="modal1"><i class="fa fa-shopping-cart fa-lg"></i></btn>' +
             '                   </div>' +
             '                   <div class="card-action">' +
             '                       <a>Preço R$:' + price + '</a>' +
@@ -151,7 +157,6 @@ function generateFlightPrices(totalFlights) {
 }
 
 function generateFlightDate(date, toGenerate) {
-    console.log(date);
     if (date === "" && !toGenerate) {
         tempDate = new Date();
         return datesFromArray = new Date(tempDate.setDate(tempDate.getDate() + Math.round(Math.random() * 30)));
@@ -182,3 +187,18 @@ let flightCard =
     "                        </div>\n" +
     "                    </div>\n" +
     "                </div>";
+
+function buy(c) {
+    let info = c.split(',');
+    console.log(c.split(','));
+    $(".modal").find('.textBuy').empty().text('Você deseja comprar a passagem para ' + info[1]+'?');
+    $(".modal").find('.com').empty().text('Companhia: ' + info[0].replace(/\b\w/g, l => l.toUpperCase()));
+    $(".modal").find('.dep').empty().text('Partida: ' + info[1]);
+    $(".modal").find('.arv').empty().text('Destino: ' + info[2]);
+    $(".modal").find('.depD').empty().text('Data partida: ' + info[3]);
+    $(".modal").find('.arvD').empty().text('Data retorno: ' + info[4]);
+}
+
+function showBought() {
+    $("#modal2").modal('open')
+}
