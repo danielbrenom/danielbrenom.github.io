@@ -59,6 +59,8 @@ The App receives a short-lived OAuth access token required for authorized Google
 
 The OAuth access token is stored locally using the device's secure storage facilities. The App does not receive or store the user's Google account password.
 
+TCG Companion does not create or maintain user accounts. Google authentication is used solely to authorize optional access to the user's Google Drive application data area for synchronization.
+
 ---
 
 ## 5. Google AdMob and advertising
