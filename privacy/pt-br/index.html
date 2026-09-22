@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidade do TCG Companion - Guiomarino Dev & Game. Explica armazenamento local, sincronização com Google Drive, AdMob e processamento do scanner de cartas.">
+    <title>Política de Privacidade — TCG Companion | Guiomarino Dev & Game</title>
+    <link rel="icon" type="image/png" href="../../images/logo_transparent.png">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<!-- Navegação -->
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="../../pt-br/index.html" class="brand-link">
+            <img src="../../images/logo_transparent.png" alt="Logo Guiomarino Dev & Game" class="brand-logo">
+            <span>Guiomarino Dev &amp; Game</span>
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../../pt-br/index.html" class="nav-link">Início</a></li>
+                <li><a href="../../screenshots/pt-br/index.html" class="nav-link">Capturas</a></li>
+                <li><a href="index.html" class="nav-link active">Política de Privacidade</a></li>
+                <li><a href="../../terms/pt-br/index.html" class="nav-link">Termos de Uso</a></li>
+                <li><a href="../../support/pt-br/index.html" class="nav-link">Suporte &amp; FAQ</a></li>
+                <li><a href="https://github.com/GuiomarinoDev" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li>
+                <li class="lang-item">
+                    <div class="lang-switcher" aria-label="Seletor de idioma">
+                        <a href="../index.html" class="lang-btn" title="English">EN</a>
+                        <span class="lang-divider" aria-hidden="true">|</span>
+                        <a href="index.html" class="lang-btn active" title="Português (Brasil)">PT-BR</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Cabeçalho da Página -->
+    <div class="page-header">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../pt-br/index.html">Início</a>
+                <span>/</span>
+                <span>Legal</span>
+                <span>/</span>
+                <span style="color: var(--text-primary);">Política de Privacidade</span>
+            </nav>
+            <h1 class="page-title">Política de Privacidade — TCG Companion</h1>
+            <div class="page-meta">
+                <span><strong>Última Atualização:</strong> 25 de agosto de 2026</span>
+                <span><strong>App:</strong> TCG Companion</span>
+                <span><a href="privacy.md" download="Politica-de-Privacidade-TCG-Companion.md" style="display: inline-flex; align-items: center; gap: 0.35rem;">📥 Baixar Markdown (.md)</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal & Barra Lateral -->
+    <div class="container">
+        <div class="doc-layout">
+            <!-- Barra Lateral com Índice -->
+            <aside class="doc-sidebar">
+                <div class="doc-sidebar-title">Índice</div>
+                <ul class="doc-nav-list">
+                    <li><a href="#about" class="doc-nav-link">1. Sobre o TCG Companion</a></li>
+                    <li><a href="#local-data" class="doc-nav-link">2. Armazenamento Local</a></li>
+                    <li><a href="#google-drive" class="doc-nav-link">3. Sincronização Google Drive</a></li>
+                    <li><a href="#authentication" class="doc-nav-link">4. Autenticação Google</a></li>
+                    <li><a href="#admob" class="doc-nav-link">5. Publicidade (AdMob)</a></li>
+                    <li><a href="#external-data" class="doc-nav-link">6. Dados de Cartas Externos</a></li>
+                    <li><a href="#camera-scanner" class="doc-nav-link">7. Câmera e Scanner</a></li>
+                    <li><a href="#network" class="doc-nav-link">8. Chamadas de Rede</a></li>
+                    <li><a href="#data-sharing" class="doc-nav-link">9. Compartilhamento</a></li>
+                    <li><a href="#security" class="doc-nav-link">10. Segurança</a></li>
+                    <li><a href="#retention-deletion" class="doc-nav-link">11. Retenção e Exclusão</a></li>
+                    <li><a href="#rights" class="doc-nav-link">12. Seus Direitos (LGPD)</a></li>
+                    <li><a href="#third-parties" class="doc-nav-link">13. Serviços de Terceiros</a></li>
+                    <li><a href="#children" class="doc-nav-link">14. Privacidade de Crianças</a></li>
+                    <li><a href="#changes" class="doc-nav-link">15. Alterações nesta Política</a></li>
+                    <li><a href="#contact" class="doc-nav-link">16. Contato</a></li>
+                </ul>
+            </aside>
+
+            <!-- Corpo do Documento -->
+            <article class="doc-content">
+                <p>
+                    A Guiomarino Dev &amp; Game (<em>"Guiomarino"</em>, <em>"nós"</em> ou <em>"nosso"</em>) desenvolve e mantém o <strong>TCG Companion</strong> (o <em>"Aplicativo"</em> ou <em>"App"</em>).
+                </p>
+                <p>
+                    Esta Política de Privacidade explica quais informações o Aplicativo processa, onde essas informações são armazenadas, quando são transmitidas a serviços de terceiros e as opções disponíveis para os usuários.
+                </p>
+
+                <div class="callout">
+                    <div class="callout-title">Resumo dos Princípios Fundamentais</div>
+                    <p style="margin-bottom: 0;">
+                        <strong>O TCG Companion é construído local-first.</strong> Suas coleções de cartas, listas de desejos e operações do scanner permanecem no seu dispositivo. Nós não mantemos contas de usuário nem servidores de banco de dados remotos para monitorar seu inventário. A sincronização em nuvem opcional ocorre diretamente na sua pasta privada do Google Drive.
+                    </p>
+                </div>
+
+                <h2 id="about">1. Sobre o TCG Companion</h2>
+                <p>
+                    O TCG Companion é um aplicativo desenvolvido para gerenciar, pesquisar e acompanhar coleções de Trading Card Games (TCG). Construído com uma arquitetura modular multi-TCG extensível, o Aplicativo é lançado com suporte inicial abrangente ao Pokémon Trading Card Game.
+                </p>
+                <p>
+                    O Aplicativo foi projetado para operar primordialmente com armazenamento local no dispositivo do usuário. Recursos opcionais, como sincronização em nuvem via Google Drive e exibição de anúncios, envolvem serviços de terceiros.
+                </p>
+
+                <h2 id="local-data">2. Informações armazenadas localmente no seu dispositivo</h2>
+                <p>A maioria das informações utilizadas pelo Aplicativo permanece exclusivamente no dispositivo do usuário. O Aplicativo pode armazenar localmente:</p>
+                <ul>
+                    <li>identificadores de cartas e dados de coleções/expansões;</li>
+                    <li>variantes de cartas, como Normal, Reverse Holo e Holo;</li>
+                    <li>quantidades de cartas e contagem de itens adquiridos;</li>
+                    <li>classificações de estado de conservação/qualidade das cartas;</li>
+                    <li>itens da lista de desejos e datas de adição;</li>
+                    <li>preferências visuais e de tema;</li>
+                    <li>configurações e estado de sincronização;</li>
+                    <li>carimbo de data/hora da última sincronização;</li>
+                    <li>um identificador aleatório (GUID) gerado pelo app no dispositivo para resolução de conflitos de sincronização;</li>
+                    <li>contadores relacionados a anúncios e estado de recompensas locais;</li>
+                    <li>configurações de cache e atualizações.</li>
+                </ul>
+                <p>
+                    O Aplicativo não transmite esses valores armazenados localmente para servidores operados pela Guiomarino Dev &amp; Game.
+                </p>
+
+                <h2 id="google-drive">3. Sincronização com o Google Drive</h2>
+                <p>
+                    O Aplicativo oferece um recurso opcional de sincronização usando o Google Drive.
+                </p>
+                <p>
+                    Quando ativado pelo usuário, o Aplicativo envia os dados necessários para sincronizar a coleção e a lista de desejos para a conta Google do próprio usuário. O Aplicativo solicita apenas o escopo <code>drive.appdata</code> do Google Drive, e os dados de sincronização são armazenados na pasta privada <code>appDataFolder</code> do Google.
+                </p>
+                <p>
+                    Os dados sincronizados incluem dados da coleção, dados da lista de desejos, metadados de sincronização, o GUID aleatório do dispositivo gerado pelo app, carimbos de data/hora e informações de revisão.
+                </p>
+                <p>
+                    O Aplicativo não utiliza os dados de coleção sincronizados para publicidade, criação de perfis, venda de informações ou finalidades não relacionadas, e não mantém uma cópia própria da coleção do usuário em servidores externos.
+                </p>
+                <p>
+                    Os metadados de sincronização contêm <code>SchemaVersion</code>, <code>DeviceId</code>, <code>LastModified</code> e <code>Revision</code>. O <code>DeviceId</code> é um GUID aleatório gerado pelo Aplicativo, não sendo um identificador de hardware como IMEI ou número de série. Ele é utilizado unicamente para resolver conflitos entre dispositivos e é incluído no arquivo <code>sync.json</code> armazenado na área privada de dados do Google Drive do usuário.
+                </p>
+
+                <h2 id="authentication">4. Autenticação do Google</h2>
+                <p>
+                    Para habilitar a sincronização com o Google Drive, o Aplicativo utiliza os mecanismos de autorização do Google e solicita apenas o escopo de autorização <code>drive.appdata</code>.
+                </p>
+                <p>
+                    O Aplicativo recebe um token de acesso OAuth de curta duração necessário para realizar requisições autorizadas à API do Google Drive. Ele <strong>não</strong> solicita nem recebe o endereço de e-mail do Google, nome, foto de perfil ou ID de conta do usuário.
+                </p>
+                <p>
+                    O token de acesso OAuth é armazenado localmente utilizando os recursos de armazenamento seguro do dispositivo. O Aplicativo não recebe nem armazena a senha da conta Google do usuário.
+                </p>
+                <p>
+                    O TCG Companion não cria nem mantém contas de usuário. A autenticação do Google é utilizada exclusivamente para autorizar o acesso opcional à área de dados do aplicativo no Google Drive para fins de sincronização.
+                </p>
+
+                <h2 id="admob">5. Google AdMob e publicidade</h2>
+                <p>
+                    O TCG Companion utiliza o <strong>Google AdMob</strong> para exibir anúncios.
+                </p>
+                <p>Dependendo da localização, escolhas de consentimento e requisitos aplicáveis, o SDK de publicidade pode processar:</p>
+                <ul>
+                    <li>ID de Publicidade do Google (Advertising ID);</li>
+                    <li>identificadores e características do dispositivo, como modelo, fabricante, versão do sistema operacional, dimensões de tela e informações da operadora;</li>
+                    <li>endereço IP;</li>
+                    <li>localização geográfica aproximada derivada do endereço IP;</li>
+                    <li>impressões e interações com anúncios, incluindo cliques e visualizações de anúncios premiados;</li>
+                    <li>diagnósticos técnicos do SDK de anúncios, como latência de requisições, dados de preenchimento e falhas no carregamento de anúncios.</li>
+                </ul>
+                <p>
+                    O Aplicativo não solicita a localização precisa do dispositivo e não solicita permissões de GPS.
+                </p>
+                <p>
+                    Anúncios personalizados podem ser exibidos onde permitido e onde o consentimento exigido tiver sido obtido. Anúncios não personalizados podem ser exibidos quando o consentimento para publicidade personalizada não estiver disponível ou for recusado.
+                </p>
+                <p>
+                    O Aplicativo utiliza a Plataforma de Mensagens do Usuário (UMP) da Google para gerenciar o consentimento de publicidade aplicável. Os usuários podem revisar ou alterar suas preferências de privacidade de anúncios em <strong>Configurações &rarr; Gerenciar Opções de Privacidade de Anúncios</strong>.
+                </p>
+                <p>
+                    O Aplicativo não vende diretamente as informações pessoais dos usuários a anunciantes. Os dados processados pelo Google AdMob estão sujeitos às práticas de privacidade e retenção de dados da própria Google.
+                </p>
+
+                <h2 id="external-data">6. Dados de cartas de serviços externos</h2>
+                <p>
+                    Para fornecer catálogos de cartas, imagens e detalhes das cartas, o Aplicativo se comunica com provedores de dados de terceiros, de acordo com o jogo de cartas:
+                </p>
+                <h3>Módulo Pokémon TCG: TCGdex &amp; PokeAPI</h3>
+                <ul>
+                    <li><strong>TCGdex:</strong> O Aplicativo utiliza a API pública TCGdex para obter informações sobre cartas do Pokémon Trading Card Game, incluindo nomes, descrições, metadados e artes das cartas. As artes e os metadados podem ser armazenados em cache local no dispositivo para otimização de desempenho. O Aplicativo não envia a coleção ou lista de desejos do usuário para o TCGdex. Quando o scanner de cartas reconhece o nome de uma carta, o Aplicativo pode enviar o nome reconhecido como uma consulta de pesquisa de texto ao TCGdex para buscar os detalhes da carta correspondente.
+                    </li>
+                    <li><strong>PokeAPI:</strong> O Aplicativo utiliza recursos públicos de referência e sprites de Pokémon disponibilizados pelo ecossistema PokeAPI. Os sprites podem ser armazenados em cache local. Nenhum dado de coleção ou informação pessoal do usuário é transmitido ao PokeAPI.
+                    </li>
+                </ul>
+
+                <h2 id="camera-scanner">7. Câmera e escaneamento de cartas</h2>
+                <p>
+                    O Aplicativo inclui um recurso de scanner de cartas que utiliza a câmera do dispositivo para auxiliar na identificação de cartas físicas. Os quadros da câmera são processados inteiramente no dispositivo utilizando OpenCV e Tesseract OCR com modelo de idioma incluído localmente no pacote do app.
+                </p>
+                <p>
+                    O Aplicativo não envia fotos da câmera, transmissões de vídeo, recortes de imagens ou texto OCR bruto para a Guiomarino Dev &amp; Game, provedores de dados de cartas (ex.: TCGdex), Google, AdMob ou quaisquer outros serviços remotos.
+                </p>
+                <p>
+                    Após o reconhecimento local ocorrer no próprio dispositivo, o texto com o nome da carta reconhecida pode ser enviado como termo de busca para APIs públicas de cartas (como o TCGdex para Pokémon TCG) para carregar os metadados públicos correspondentes.
+                </p>
+
+                <h2 id="network">8. Comunicações de rede</h2>
+                <p>O Aplicativo pode se comunicar via HTTPS com:</p>
+                <ul>
+                    <li><strong>APIs de Dados de Cartas (ex.: TCGdex API &amp; CDN, PokeAPI)</strong> &mdash; informações públicas de cartas, ilustrações e sprites;</li>
+                    <li><strong>Google Drive API / Google Identity</strong> &mdash; sincronização opcional de coleção e autorização;</li>
+                    <li><strong>Google AdMob / Google UMP</strong> &mdash; exibição de anúncios e gerenciamento de consentimento.</li>
+                </ul>
+                <p>
+                    O Aplicativo não opera um servidor backend próprio para receber ou armazenar a coleção do usuário.
+                </p>
+
+                <h2 id="data-sharing">9. Compartilhamento de dados</h2>
+                <p>
+                    A Guiomarino Dev &amp; Game não comercializa nem vende informações pessoais dos usuários.
+                </p>
+                <p>Dependendo dos recursos utilizados, as informações podem ser processadas por:</p>
+                <ul>
+                    <li><strong>Google:</strong> autenticação e sincronização opcional com Google Drive;</li>
+                    <li><strong>Google AdMob:</strong> veiculação de anúncios, métricas de publicidade, prevenção a fraudes e diagnósticos técnicos correlatos;</li>
+                    <li><strong>TCGdex &amp; PokeAPI:</strong> metadados públicos de cartas, artes e assets gráficos para o módulo Pokémon TCG.</li>
+                </ul>
+                <p>
+                    A coleção do usuário, a lista de desejos e os metadados de sincronização são transmitidos ao Google Drive somente quando a sincronização estiver ativada. O Aplicativo não envia coleções ou listas de desejos para provedores de dados de cartas.
+                </p>
+
+                <h2 id="security">10. Segurança</h2>
+                <p>
+                    Empregamos medidas técnicas razoáveis para proteger as informações processadas pelo Aplicativo, incluindo o armazenamento local dos dados de coleções, armazenamento seguro local de credenciais OAuth, comunicações de rede seguras via HTTPS, mecanismos de autorização da Google e minimização de dados transmitidos para fora do dispositivo.
+                </p>
+                <p>
+                    Nenhum método de transmissão eletrônica ou armazenamento é 100% inviolável.
+                </p>
+
+                <h2 id="retention-deletion">11. Retenção e exclusão de dados</h2>
+                <h3>Dados locais</h3>
+                <p>
+                    Os dados armazenados localmente permanecem no dispositivo até serem excluídos pelo usuário, pelo Aplicativo ou pelo sistema operacional. Desinstalar o Aplicativo Android remove seu banco de dados local, cache, entradas de armazenamento seguro e preferências do dispositivo.
+                </p>
+                <h3>Dados do Google Drive</h3>
+                <p>
+                    Os dados de sincronização em nuvem permanecem na área de dados de aplicativos do Google Drive do usuário até serem excluídos.
+                </p>
+                <p>O Aplicativo disponibiliza as opções:</p>
+                <ul>
+                    <li><strong>Excluir Minha Coleção e Lista de Desejos</strong></li>
+                    <li><strong>Desconectar Conta Google &rarr; Excluir Backup</strong></li>
+                </ul>
+                <p>
+                    Caso o usuário opte por manter o backup ao desconectar o Google, a cópia em nuvem permanece no Google Drive e apenas as credenciais locais de autenticação são removidas.
+                </p>
+                <p>
+                    Ao desinstalar o Aplicativo, os dados de sincronização em nuvem não podem ser excluídos automaticamente pelo desinstalador, pois o Aplicativo não está mais presente para executar a requisição de exclusão. O usuário pode remover os dados da nuvem reinstalando o Aplicativo e utilizando as opções de exclusão internas ou pelas configurações de gerenciamento de dados de aplicativos do Google Drive.
+                </p>
+
+                <h2 id="rights">12. Seus direitos de privacidade (LGPD e Legislações Aplicáveis)</h2>
+                <p>
+                    Em conformidade com a legislação aplicável, incluindo a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) no Brasil e legislações internacionais pertinentes, os usuários têm direitos que incluem: confirmação da existência de tratamento, acesso aos dados, correção de dados incompletos ou inexatos, anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade, portabilidade, informação sobre o compartilhamento de dados, revogação de consentimento e oposição a determinados tratamentos.
+                </p>
+                <p>
+                    Para solicitações referentes ao processamento realizado pela Guiomarino Dev &amp; Game, entre em contato através dos dados abaixo. Quando as informações forem processadas diretamente por terceiros (como Google AdMob ou Google Drive), as solicitações deverão ser direcionadas a esses provedores.
+                </p>
+
+                <h2 id="third-parties">13. Serviços de terceiros e políticas</h2>
+                <p>
+                    O Aplicativo utiliza Google / Google Identity / Google Drive, Google AdMob / Google User Messaging Platform, TCGdex e PokeAPI. Recomendamos que os usuários consultem as políticas de privacidade desses provedores:
+                </p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
+                    <li><a href="https://www.google.com/drive/terms-of-service/" target="_blank" rel="noopener noreferrer">Termos de Serviço do Google Drive</a></li>
+                    <li><a href="https://tcgdex.net/" target="_blank" rel="noopener noreferrer">Website TCGdex</a></li>
+                    <li><a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">Website PokeAPI</a></li>
+                </ul>
+
+                <h2 id="children">14. Privacidade de crianças</h2>
+                <p>
+                    O TCG Companion não foi concebido para solicitar ou coletar intencionalmente dados pessoais de crianças para criação de perfis. O Aplicativo não requer nome, e-mail ou dados de perfil infantil.
+                </p>
+                <p>
+                    Se os pais ou responsáveis legais acreditarem que uma criança forneceu informações pessoais indevidamente, pedimos que entrem em contato conosco pelos canais indicados abaixo.
+                </p>
+
+                <h2 id="changes">15. Alterações nesta Política de Privacidade</h2>
+                <p>
+                    Podemos atualizar esta Política de Privacidade quando o Aplicativo, seus jogos de cartas suportados, integrações de terceiros ou requisitos legais mudarem. Ao realizarmos alterações, atualizaremos a data de "Última atualização" no início deste documento.
+                </p>
+
+                <h2 id="contact">16. Contato</h2>
+                <div style="background: rgba(15, 23, 42, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <p><strong>Guiomarino Dev &amp; Game</strong></p>
+                    <p><strong>Aplicativo:</strong> TCG Companion</p>
+                    <p><strong>E-mail:</strong> <a href="mailto:guiomarinodevgame@gmail.com">guiomarinodev@gmail.com</a></p>
+                    <p><strong>Website:</strong> <a href="https://danielbrenom.github.io">https://danielbrenom.github.io</a></p>
+                    <p style="margin-bottom: 0;"><strong>URL da Política de Privacidade:</strong> <a href="https://danielbrenom.github.io/privacy/pt-br/">https://danielbrenom.github.io/privacy/pt-br/</a></p>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+
+<!-- Rodapé Universal -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <img src="../../images/logo_transparent.png" alt="Guiomarino Dev & Game" class="footer-logo">
+                    <span>Guiomarino Dev &amp; Game</span>
+                </div>
+                <p class="footer-desc">
+                    Estúdio independente de desenvolvimento de software e jogos focado em ferramentas práticas para desenvolvedores, utilitários para jogadores e aplicativos móveis modernos.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Apps &amp; Projetos</h4>
+                <ul class="footer-links">
+                    <li><a href="../../pt-br/index.html#featured-apps">TCG Companion</a></li>
+                    <li><a href="../../screenshots/pt-br/index.html">Capturas do App</a></li>
+                    <li><a href="../../support/pt-br/index.html">Solução de Problemas &amp; FAQ</a></li>
+                    <li><a href="https://github.com/danielbrenom" target="_blank" rel="noopener noreferrer">Perfil no GitHub</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Legal &amp; Políticas</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Política de Privacidade</a></li>
+                    <li><a href="../../terms/pt-br/index.html">Termos de Uso</a></li>
+                    <li><a href="../../support/pt-br/index.html">Contato de Suporte</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            <p>
+                <strong>Aviso Legal:</strong> O <em>TCG Companion</em> é um utilitário complementar não oficial desenvolvido por Guiomarino Dev &amp; Game. Pokémon e nomes de personagens Pokémon, Pokémon Trading Card Game, artes das cartas, nomes e marcas associadas são marcas comerciais ou marcas registradas de Nintendo, Creatures Inc. e GAME FREAK Inc. A Guiomarino Dev &amp; Game não é afiliada, endossada ou patrocinada por Nintendo, Creatures Inc., GAME FREAK Inc. ou The Pokémon Company.
+            </p>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 Guiomarino Dev &amp; Game. Todos os direitos reservados.</div>
+            <div>Hospedado no GitHub Pages</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

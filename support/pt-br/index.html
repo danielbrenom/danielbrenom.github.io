@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suporte e Perguntas Frequentes (FAQ) do TCG Companion - Guiomarino Dev & Game. Ajuda com sincronização no Google Drive, scanner de cartas, solução de problemas e contato.">
+  <title>Suporte &amp; FAQ — TCG Companion | Guiomarino Dev & Game</title>
+  <link rel="icon" type="image/png" href="../../images/logo_transparent.png">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <!-- Navegação -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../../pt-br/index.html" class="brand-link">
+        <img src="../../images/logo_transparent.png" alt="Logo Guiomarino Dev & Game" class="brand-logo">
+        <span>Guiomarino Dev &amp; Game</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../../pt-br/index.html" class="nav-link">Início</a></li>
+          <li><a href="../../screenshots/pt-br/index.html" class="nav-link">Capturas</a></li>
+          <li><a href="../../privacy/pt-br/index.html" class="nav-link">Política de Privacidade</a></li>
+          <li><a href="../../terms/pt-br/index.html" class="nav-link">Termos de Uso</a></li>
+          <li><a href="index.html" class="nav-link active">Suporte &amp; FAQ</a></li>
+          <li><a href="https://github.com/GuiomarinoDev" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li>
+          <li class="lang-item">
+            <div class="lang-switcher" aria-label="Seletor de idioma">
+              <a href="../index.html" class="lang-btn" title="English">EN</a>
+              <span class="lang-divider" aria-hidden="true">|</span>
+              <a href="index.html" class="lang-btn active" title="Português (Brasil)">PT-BR</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabeçalho da Página -->
+    <div class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../../pt-br/index.html">Início</a>
+          <span>/</span>
+          <span style="color: var(--text-primary);">Suporte &amp; FAQ</span>
+        </nav>
+        <h1 class="page-title">Suporte &amp; Perguntas Frequentes</h1>
+        <div class="page-meta">
+          <span><strong>App:</strong> TCG Companion</span>
+          <span><strong>Estúdio:</strong> Guiomarino Dev &amp; Game</span>
+          <span><strong>E-mail Direto:</strong> <a href="mailto:guiomarinodev@gmail.com">guiomarinodev@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 5rem;">
+      <!-- Seção FAQ -->
+      <div style="max-width: 850px; margin: 0 auto;">
+        
+        <!-- Seção: Jogos Suportados -->
+        <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 2rem 0 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>🃏</span> Jogos Suportados &amp; Roteiro de Atualizações
+        </h2>
+        
+        <div class="faq-grid">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Quais card games são suportados atualmente no TCG Companion?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                O <strong>TCG Companion</strong> foi construído desde o início com uma arquitetura modular extensível para card games. O app estreia com suporte abrangente e detalhado ao <strong>Pokémon Trading Card Game</strong>, oferecendo catálogos completos de coleções, controle de variantes (Normal, Holo, Reverse Holo), notas de conservação de cartas e busca de cartas/preços.
+              </p>
+              <p>
+                O suporte a outros card games populares está ativamente em fase de planejamento e desenvolvimento.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como posso sugerir suporte para um novo card game ou coleção?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Adoramos a participação da comunidade! Se houver um jogo de cartas colecionáveis ou expansão específica que você gostaria de ver no app, envie um e-mail para <a href="mailto:guiomarinodev@gmail.com">guiomarinodev@gmail.com</a> com o assunto <code>[Sugestão TCG] Nome do Card Game</code>.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Seção: Google Drive Sync -->
+        <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 3rem 0 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>☁️</span> Backup &amp; Sincronização no Google Drive
+        </h2>
+
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como funciona a sincronização com o Google Drive?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Ao conectar sua Conta Google nas configurações do aplicativo, o TCG Companion utiliza o escopo restrito <code>drive.appdata</code> para salvar sua coleção e lista de desejos na pasta privada de aplicativos do seu próprio Google Drive (<code>appDataFolder</code>).
+              </p>
+              <ul>
+                <li>Seu arquivo de coleção é privado da sua Conta Google e fica invisível nas pastas normais do Drive.</li>
+                <li>A Guiomarino Dev &amp; Game não salva seu inventário em servidores externos.</li>
+                <li>Os identificadores de dispositivo utilizados para resolver versões de sincronização são GUIDs gerados aleatoriamente, e não identificadores físicos de hardware.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>O que fazer se a sincronização falhar ou acusar erro de autorização?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Se você encontrar falhas na sincronização:</p>
+              <ol style="padding-left: 1.25rem; margin-bottom: 0.75rem;">
+                <li>Verifique se o seu dispositivo possui uma conexão estável à internet.</li>
+                <li>Acesse <strong>Configurações &rarr; Sincronização Google Drive</strong> no aplicativo.</li>
+                <li>Toque em <strong>Desconectar Conta Google</strong> e, em seguida, em <strong>Conectar Conta Google</strong> para renovar seu token de autorização OAuth.</li>
+                <li>Toque em <strong>Sincronizar Agora</strong> para iniciar o backup manual.</li>
+              </ol>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>O que acontece com meus dados se eu trocar de aparelho ou desinstalar o app?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>Desinstalar o aplicativo:</strong> Remove o banco de dados local e as preferências do aparelho. Contudo, se você ativou a Sincronização com o Google Drive, seu backup permanece a salvo no seu Google Drive.
+              </p>
+              <p>
+                <strong>Restaurar em um novo aparelho:</strong> Instale o TCG Companion, acesse <strong>Configurações &rarr; Sincronização Google Drive</strong>, conecte a mesma Conta Google e selecione <strong>Restaurar do Google Drive</strong>.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Seção: Câmera & Scanner -->
+        <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 3rem 0 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>📷</span> Dicas para a Câmera e Scanner OCR de Cartas
+        </h2>
+
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como melhorar a precisão do scanner de cartas?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Siga estas dicas para obter velocidade e precisão ideais no escaneamento:</p>
+              <ul>
+                <li><strong>Iluminação:</strong> Escaneie em ambiente bem iluminado com luz indireta para evitar reflexos ou brilhos nos protetores plásticos (sleeves).</li>
+                <li><strong>Superfície:</strong> Coloque a carta sobre uma superfície lisa e com cor de contraste (ex.: um playmat escuro para cartas claras).</li>
+                <li><strong>Alinhamento:</strong> Posicione a barra de título da carta dentro da moldura guia exibida na tela.</li>
+                <li><strong>Foco da Câmera:</strong> Mantenha o aparelho estável a cerca de 15 a 20 cm de distância até que o autofoco fixe no nome da carta.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>O vídeo ou imagem da câmera é enviado a servidores remotos durante o escaneamento?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>Não.</strong> O processamento visual é realizado 100% de forma local no seu próprio dispositivo, utilizando OpenCV e Tesseract OCR com modelo embutido no aplicativo. Nenhum quadro de câmera, recorte ou foto é transmitido para qualquer servidor externo.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Seção: Anúncios & Privacidade -->
+        <h2 style="font-size: 1.4rem; color: var(--text-primary); margin: 3rem 0 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>🛡️</span> Privacidade, Publicidade e Configurações
+        </h2>
+
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como gerenciar minhas preferências de privacidade de anúncios?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Você pode revisar ou alterar suas escolhas de privacidade de publicidade (em conformidade com a LGPD e GDPR) a qualquer momento abrindo <strong>Configurações &rarr; Gerenciar Opções de Privacidade de Anúncios</strong> no app.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Onde posso ler as políticas legais completas?</span>
+              <span class="faq-icon">▼</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Você pode consultar nossa <a href="../../privacy/pt-br/index.html">Política de Privacidade</a> e nossos <a href="../../terms/pt-br/index.html">Termos de Uso</a> completos diretamente neste site.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Card de Contato com Suporte -->
+        <div class="contact-card">
+          <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">✉️</div>
+          <h3>Precisa de Mais Ajuda?</h3>
+          <p>
+            Tem alguma dúvida que não foi abordada acima, quer relatar um bug ou tem uma sugestão para o TCG Companion? Fale diretamente com nossa equipe de desenvolvimento.
+          </p>
+          <div style="margin-bottom: 1.5rem;">
+            <a href="mailto:guiomarinodev@gmail.com" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.75rem 1.75rem;">
+              E-mail: guiomarinodev@gmail.com
+            </a>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">
+            Ao relatar um problema, informe o <strong>modelo do aparelho</strong>, a <strong>versão do Android</strong> e uma breve descrição do ocorrido. Respondemos normalmente em 24 a 48 horas úteis.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé Universal -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="../../images/logo_transparent.png" alt="Guiomarino Dev & Game" class="footer-logo">
+            <span>Guiomarino Dev &amp; Game</span>
+          </div>
+          <p class="footer-desc">
+            Estúdio independente de desenvolvimento de software e jogos focado em ferramentas práticas para desenvolvedores, utilitários para jogadores e aplicativos móveis modernos.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Apps &amp; Projetos</h4>
+          <ul class="footer-links">
+            <li><a href="../../pt-br/index.html#featured-apps">TCG Companion</a></li>
+            <li><a href="../../screenshots/pt-br/index.html">Capturas do App</a></li>
+            <li><a href="index.html">Solução de Problemas &amp; FAQ</a></li>
+            <li><a href="https://github.com/GuiomarinoDev" target="_blank" rel="noopener noreferrer">Perfil no GitHub</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal &amp; Políticas</h4>
+          <ul class="footer-links">
+            <li><a href="../../privacy/pt-br/index.html">Política de Privacidade</a></li>
+            <li><a href="../../terms/pt-br/index.html">Termos de Uso</a></li>
+            <li><a href="index.html">Contato de Suporte</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p>
+          <strong>Aviso Legal:</strong> O <em>TCG Companion</em> é um utilitário complementar não oficial desenvolvido por Guiomarino Dev &amp; Game. Pokémon e nomes de personagens Pokémon, Pokémon Trading Card Game, artes das cartas, nomes e marcas associadas são marcas comerciais ou marcas registradas de Nintendo, Creatures Inc. e GAME FREAK Inc. A Guiomarino Dev &amp; Game não é afiliada, endossada ou patrocinada por Nintendo, Creatures Inc., GAME FREAK Inc. ou The Pokémon Company.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Guiomarino Dev &amp; Game. Todos os direitos reservados.</div>
+        <div>Hospedado no GitHub Pages</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
